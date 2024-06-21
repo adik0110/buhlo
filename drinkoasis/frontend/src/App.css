@@ -1,38 +1,154 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-ExtraBold.eot');
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+    url('fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-ExtraBold.woff') format('woff'),
+    url('fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-Light.eot');
+  src: local('Gilroy Light'), local('Gilroy-Light'),
+    url('fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-Light.woff') format('woff'),
+    url('fonts/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-Regular.woff') format('woff'),
+    url('fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-SemiBold.eot');
+  src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+    url('fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-Medium.eot');
+  src: local('Gilroy Medium'), local('Gilroy-Medium'),
+    url('fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-Medium.woff') format('woff'),
+    url('fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-Bold.woff') format('woff'),
+    url('fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-Black.eot');
+  src: local('Gilroy Black'), local('Gilroy-Black'),
+    url('fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy-Black.woff') format('woff'),
+    url('fonts/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yorkten';
+  src: url('fonts/YorktenSlab-NorReg.eot');
+  src: url('fonts/YorktenSlab-NorReg.eot?#iefix') format('embedded-opentype'),
+    url('fonts/YorktenSlab-NorReg.woff2') format('woff2'),
+    url('fonts/YorktenSlab-NorReg.woff') format('woff'),
+    url('fonts/YorktenSlab-NorReg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BananaGr';
+  src: url('fonts/BananaGrotesk-Regular.eot');
+  src: url('fonts/BananaGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/BananaGrotesk-Regular.woff2') format('woff2'),
+    url('fonts/BananaGrotesk-Regular.woff') format('woff'),
+    url('fonts/BananaGrotesk-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BananaGr';
+  src: url('fonts/BananaGrotesk-Bold.eot');
+  src: url('fonts/BananaGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/BananaGrotesk-Bold.woff2') format('woff2'),
+    url('fonts/BananaGrotesk-Bold.woff') format('woff'),
+    url('fonts/BananaGrotesk-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BananaGr';
+  src: url('fonts/BananaGrotesk-Extrabold.eot');
+  src: url('fonts/BananaGrotesk-Extrabold.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/BananaGrotesk-Extrabold.woff2') format('woff2'),
+    url('fonts/BananaGrotesk-Extrabold.woff') format('woff'),
+    url('fonts/BananaGrotesk-Extrabold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('fonts/OpenSans-Regular.eot');
+  src: url('fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('fonts/OpenSans-Regular.woff') format('woff'),
+    url('fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('fonts/OpenSans-SemiBold.eot');
+  src: url('fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSans-SemiBold.woff2') format('woff2'),
+    url('fonts/OpenSans-SemiBold.woff') format('woff'),
+    url('fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: Gilroy;
 }
