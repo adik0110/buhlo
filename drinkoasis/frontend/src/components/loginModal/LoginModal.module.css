@@ -102,3 +102,10 @@
   top: 23px;
   cursor: pointer;
 }
+
+.loginModal__error {
+  color: red;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 11px;
+}
