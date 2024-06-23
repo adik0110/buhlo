@@ -16,6 +16,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'mainpage.apps.MainpageConfig',
+    'authorization.apps.AuthorizationConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -118,3 +119,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ],
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000',
+]

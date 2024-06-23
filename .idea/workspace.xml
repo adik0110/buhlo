@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa010fa3-4833-4534-92be-23c9b283a652" name="Changes" comment="mainpage jsonresponse">
-      <change afterPath="$PROJECT_DIR$/drinkoasis/authorization/serializers.py" afterDir="false" />
+    <list default="true" id="fa010fa3-4833-4534-92be-23c9b283a652" name="Changes" comment="loginview">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drinkoasis/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/drinkoasis/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drinkoasis/drinkoasis/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/drinkoasis/drinkoasis/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drinkoasis/drinkoasis/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/drinkoasis/drinkoasis/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drinkoasis/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/drinkoasis/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drinkoasis/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/drinkoasis/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drinkoasis/frontend/src/components/loginModal/LoginModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/drinkoasis/frontend/src/components/loginModal/LoginModal.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718960297575</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="loginview">
+      <created>1719150403673</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719150403673</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +126,7 @@
     <MESSAGE value="startproject" />
     <MESSAGE value="testing" />
     <MESSAGE value="front" />
-    <option name="LAST_COMMIT_MESSAGE" value="front" />
+    <MESSAGE value="loginview" />
+    <option name="LAST_COMMIT_MESSAGE" value="loginview" />
   </component>
 </project>

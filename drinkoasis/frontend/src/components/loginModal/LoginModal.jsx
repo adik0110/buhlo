@@ -1,29 +1,61 @@
-import React from 'react'
-import cl from './LoginModal.module.css'
-import loginImage from '../../images/loginImage.png'
-import closeImage from '../../images/close.svg'
-import SignUpLink from '../UI/signUpLink/SignUpLink'
-import SubmitButton from '../UI/submitButton/SubmitButton'
-import Input from '../UI/input/Input'
-import { useState } from 'react'
-import GoogleButton from '../UI/googleAuth/GoogleButton'
+// LoginModal.jsx
+import React, { useState } from 'react';
+import axios from 'axios';
+import cl from './LoginModal.module.css';
+import loginImage from '../../images/loginImage.png';
+import closeImage from '../../images/close.svg';
+import SignUpLink from '../UI/signUpLink/SignUpLink';
+import SubmitButton from '../UI/submitButton/SubmitButton';
+import Input from '../UI/input/Input';
+import GoogleButton from '../UI/googleAuth/GoogleButton';
 
 const LoginModal = ({ isVisible = false, onClose }) => {
-  const [email, setEmail] = useState()
-  const [password, setPassword] = useState()
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChangeEmail = (event) => {
-    setEmail(event.target.value)
-  }
+    setEmail(event.target.value);
+  };
 
   const handleChangePassword = (event) => {
-    setPassword(event.target.value)
-  }
+    setPassword(event.target.value);
+  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(email, password)
-  }
+  const getCSRFToken = () => {
+    const cookieValue = document.cookie
+      .split('; ')
+      .find(row => row.startsWith('csrftoken='))
+      ?.split('=')[1];
+    return cookieValue || '';
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError('');
+    try {
+      const response = await axios.post('http://localhost:8000/api/login/', {
+        username: email,
+        password
+      }, {
+        headers: {
+          'X-CSRFToken': getCSRFToken()
+        },
+        withCredentials: true
+      });
+
+      if (response.status === 200) {
+        alert('Logged in successfully');
+        onClose();
+      }
+    } catch (error) {
+      setError('Invalid email or password');
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return !isVisible ? null : (
     <div className={cl.loginModal} onClick={onClose}>
@@ -65,13 +97,16 @@ const LoginModal = ({ isVisible = false, onClose }) => {
               value={password}
               className={cl.loginModal__input}
             />
+            {error && <div className={cl.loginModal__error}>{error}</div>}
             <a className={cl.loginModal__forgot}>Forgot Password?</a>
-            <SubmitButton>Sign in</SubmitButton>
+            <SubmitButton disabled={isLoading}>
+              {isLoading ? 'Signing in...' : 'Sign in'}
+            </SubmitButton>
           </form>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LoginModal
+export default LoginModal;
