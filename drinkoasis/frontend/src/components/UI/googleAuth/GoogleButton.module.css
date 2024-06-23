@@ -1,0 +1,21 @@
+.google {
+  padding: 17px;
+  width: 100%;
+  border: 1px #e7eaf3 solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #677788;
+  font-size: 16px;
+}
+
+.google:hover {
+  background: #e7eaf3;
+}
+
+.google__image {
+  margin-right: 5px;
+}

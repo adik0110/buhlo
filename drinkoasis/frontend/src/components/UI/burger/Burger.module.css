@@ -1,0 +1,30 @@
+.burger {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.burger::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 2.5px;
+  border-radius: 20px;
+  top: 18px;
+  left: 12.5px;
+  background-color: #000;
+}
+
+.burger::before {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 2.5px;
+  border-radius: 20px;
+  top: 25.5px;
+  left: 12.5px;
+  background-color: #000;
+}

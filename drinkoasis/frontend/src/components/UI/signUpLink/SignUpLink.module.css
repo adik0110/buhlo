@@ -1,0 +1,7 @@
+.sugnUpLink {
+  cursor: pointer;
+}
+
+.sugnUpLink:hover {
+  text-decoration: underline;
+}

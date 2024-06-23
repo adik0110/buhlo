@@ -1,0 +1,7 @@
+.loginLink {
+  cursor: pointer;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+}

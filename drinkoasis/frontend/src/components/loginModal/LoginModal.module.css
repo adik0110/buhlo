@@ -1,0 +1,104 @@
+.loginModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(7px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginModal__content {
+  max-width: 960px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 10px;
+}
+
+.loginModal__image {
+  border-radius: 10px 0 0 10px;
+}
+
+.loginModal__right {
+  position: relative;
+  padding: 75px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginModal__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.loginModal__title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.loginModal__text {
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.loginModal__signUp {
+  color: #377dff;
+}
+
+.loginModal__or {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin: 24px 0;
+  font-weight: 300;
+  color: #8c98a4;
+  font-size: 14px;
+}
+
+.loginModal__or::after {
+  left: -24px;
+  top: 50%;
+  background: #e7eaf3;
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 2px;
+}
+
+.loginModal__or::before {
+  right: -24px;
+  top: 50%;
+  background: #e7eaf3;
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 2px;
+}
+
+.loginModal__input {
+  margin-bottom: 24px;
+}
+
+.loginModal__forgot {
+  margin-bottom: 24px;
+  text-align: center;
+  color: #377dff;
+  cursor: pointer;
+}
+
+.loginModal__forgot:hover {
+  text-decoration: underline;
+}
+
+.loginModal__closer {
+  position: absolute;
+  right: 23px;
+  top: 23px;
+  cursor: pointer;
+}
