@@ -1,0 +1,8 @@
+.newsletter {
+  display: flex;
+}
+
+.newsletter__input {
+  margin-right: 10px;
+  width: 100%;
+}

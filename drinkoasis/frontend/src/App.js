@@ -1,21 +1,34 @@
 import { useState } from 'react'
-import './App.css'
+import cl from './App.module.css'
+import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import LoginModal from './components/loginModal/LoginModal'
+import SignupModal from './components/signupModal/SignupModal'
 function App() {
-  const [isModal, setModal] = useState(false)
+  // вот это переписать более логичным образом!!!!
+  const [isLoginModal, setLoginModal] = useState(false)
+  const [isSignupModal, setSignupModal] = useState(false)
 
   const loginActive = () => {
-    setModal(true)
+    setLoginModal(true)
+  }
+
+  const signupActive = () => {
+    setSignupModal(true)
   }
 
   return (
-    <div className="App">
-      <Header loginActive={loginActive}></Header>
+    <div className={cl.App}>
+      <Header loginActive={loginActive} signupActive={signupActive}></Header>
       <LoginModal
-        isVisible={isModal}
-        onClose={() => setModal(false)}
+        isVisible={isLoginModal}
+        onClose={() => setLoginModal(false)}
       ></LoginModal>
+      <SignupModal
+        isVisible={isSignupModal}
+        onClose={() => setSignupModal(false)}
+      ></SignupModal>
+      <Footer></Footer>
     </div>
   )
 }

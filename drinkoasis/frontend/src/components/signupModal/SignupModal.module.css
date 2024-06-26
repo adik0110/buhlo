@@ -1,4 +1,4 @@
-.loginModal {
+.signupModal {
   z-index: 999;
   position: fixed;
   top: 0;
@@ -11,48 +11,44 @@
   justify-content: center;
 }
 
-.loginModal__content {
+.signupModal__content {
   max-width: 960px;
   background-color: #fff;
   display: flex;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
-.loginModal__image {
-  border-radius: 10px 0 0 10px;
-}
-
-.loginModal__right {
+.signupModal__right {
   position: relative;
-  padding: 75px;
+  padding: 58px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.loginModal__form {
+.signupModal__form {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.loginModal__title {
+.signupModal__title {
   font-weight: 600;
   margin-bottom: 8px;
   font-size: 28px;
 }
 
-.loginModal__text {
+.signupModal__text {
   margin-bottom: 32px;
   font-size: 14px;
   font-weight: 500;
 }
 
-.loginModal__signUp {
+.signupModal__login {
   color: #377dff;
 }
 
-.loginModal__or {
+.signupModal__or {
   text-align: center;
   width: 100%;
   position: relative;
@@ -62,7 +58,7 @@
   font-size: 14px;
 }
 
-.loginModal__or::after {
+.signupModal__or::after {
   left: -24px;
   top: 50%;
   background: #e7eaf3;
@@ -72,7 +68,7 @@
   height: 2px;
 }
 
-.loginModal__or::before {
+.signupModal__or::before {
   right: -24px;
   top: 50%;
   background: #e7eaf3;
@@ -82,31 +78,40 @@
   height: 2px;
 }
 
-.loginModal__input {
+.signupModal__input {
   margin-bottom: 24px;
 }
 
-.loginModal__forgot {
+.signupModal__forgot {
   margin-bottom: 24px;
   text-align: center;
   color: #377dff;
   cursor: pointer;
 }
 
-.loginModal__forgot:hover {
+.signupModal__forgot:hover {
   text-decoration: underline;
 }
 
-.loginModal__closer {
+.signupModal__closer {
   position: absolute;
   right: 23px;
   top: 23px;
   cursor: pointer;
 }
 
-.loginModal__error {
+.signupModal__error {
   color: red;
   margin-top: -10px;
   text-align: center;
   font-size: 11px;
+}
+
+.signupModal__group {
+  display: flex;
+}
+
+.signupModal__input_first {
+  margin-bottom: 24px;
+  margin-right: 10px;
 }
