@@ -9,7 +9,7 @@ import SubmitButton from '../UI/submitButton/SubmitButton'
 import Input from '../UI/input/Input'
 import GoogleButton from '../UI/googleAuth/GoogleButton'
 
-const LoginModal = ({ isVisible = false, onClose, signupActive }) => {
+const LoginModal = ({ isVisible = false, onClose }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
